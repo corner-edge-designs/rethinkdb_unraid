@@ -22,11 +22,11 @@ WORKDIR /data
 
 RUN \
 	mkdir -p \
-    /config \
+    /configs \
     /data \
-    && touch /config/rethink-config.conf 
+    && touch /configs/rethink-config.conf 
 
-CMD ["rethinkdb", "--bind", "all" , "--http-port", "8100" ,"--config-file" , "config/rethink-config.conf"]
+CMD ["rethinkdb", "--bind", "all" , "--http-port", "8100" ,"--config-file" , "/configs/rethink-config.conf"]
 
 #   process cluster webui
 EXPOSE 28016 29016 8100
