@@ -15,9 +15,18 @@ RUN apt-get update \
 
 VOLUME ["/data"]
 
+
 WORKDIR /data
 
-CMD ["rethinkdb", "--bind", "all" , "--http-port", "8100"]
+
+
+RUN \
+	mkdir -p \
+    /config \
+    /data \
+    && touch /config/rethink-config.conf 
+
+CMD ["rethinkdb", "--bind", "all" , "--http-port", "8100" ,"--config-file" , "config/rethink-config.conf"]
 
 #   process cluster webui
 EXPOSE 28016 29016 8100
