@@ -22,5 +22,7 @@
       <Mode>rw</Mode>
     </Volume>
   </Data>
+  <WebUI>http://[IP]:[PORT:8080]/web</WebUI>
+  <Icon>http://groundknack.net/rethink-icon.png</Icon>
 <ExtraParams></ExtraParams>
 </Container>
