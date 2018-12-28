@@ -7,7 +7,8 @@
     [b]RethinkDB Database Server[/b][br][br]
    Live Database intergration.[br]
   </Description>
-  <Privileged>false</Privileged>
+  <Privileged>true</Privileged>
+  <Repository>rethinkdb</Repository>
   <Environment>
   </Environment>
   <Networking>
