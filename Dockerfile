@@ -17,7 +17,7 @@ VOLUME ["/data"]
 
 WORKDIR /data
 
-CMD ["rethinkdb", "--bind", "all" , "--port-offset" , "1"]
+CMD ["rethinkdb", "--bind", "all" , "--http-port", "8100"]
 
 #   process cluster webui
-EXPOSE 28016 29016 8081
+EXPOSE 28016 29016 8100
