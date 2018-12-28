@@ -29,4 +29,4 @@ RUN \
 CMD ["rethinkdb", "--bind", "all" , "--http-port", "8100" ,"--config-file" , "/configs/rethink-config.conf"]
 
 #   process cluster webui
-EXPOSE 28016 29016 8100
+EXPOSE 32400 32400/udp 28016 29016 8100 
