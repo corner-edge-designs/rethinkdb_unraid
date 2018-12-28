@@ -8,7 +8,7 @@
    Live Database intergration.[br]
   </Description>
   <Privileged>true</Privileged>
-  <Repository>rethinkdb</Repository>
+  <Repository>dockerdevkypemmanuel/rethinkdb_unraid</Repository>
   <Environment>
   </Environment>
   <Networking>
