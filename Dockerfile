@@ -24,9 +24,9 @@ RUN \
 	mkdir -p \
     /configs \
     /data \
-    && touch /configs/rethink-config.conf 
+    && touch /data/rethink-config.conf 
 
-CMD ["rethinkdb", "--bind", "all" , "--http-port", "8100" ,"--config-file" , "/configs/rethink-config.conf"]
+CMD ["rethinkdb", "--bind", "all" ,"--config-file" , "rethink-config.conf"]
 
 #   process cluster webui
-EXPOSE 32400 32400/udp 28016 29016 8100 
+EXPOSE 28016 29016 8100 32400 32400/udp
